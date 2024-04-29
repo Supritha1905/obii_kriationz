@@ -5,40 +5,50 @@
 @tailwind utilities;
 
 @layer components {
+
   /* Padding */
   .paddingX {
-    @apply mx-3 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24    2xl:mx-auto 2xl:w-[80rem];
+    @apply mx-3 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 2xl:mx-auto 2xl:w-[80rem];
   }
+
   .paddingY {
     @apply py-14 sm:py-16 md:py-20 xl:py-28;
   }
+
   /* Heading  we haven't gave anything to like break to heading so you have to specify where you use it */
   .heading {
     @apply text-5xl font-bold xl:text-[54px] xl:leading-[50px];
   }
+
   .subHeading {
-    @apply text-4xl font-bold tracking-wide  xl:text-[46px] xl:leading-[46px];
+    @apply text-4xl font-bold tracking-wide xl:text-[46px] xl:leading-[46px];
   }
+
   /* gradient */
   .gradient {
     @apply bg-gradient-to-br from-dark from-50% to-[#363348];
   }
+
   /* Footer things */
   .footerLink {
     @apply w-fit text-sm duration-200 hover:text-white;
   }
+
   .footerHeading {
     @apply font-medium tracking-wider text-secondWhite;
   }
+
   /* ----- in home page we have section of our capabilities this represent link inside of that */
   .homePageCapabilitiesSvg {
-    @apply mr-1 inline-block w-4 rotate-180 stroke-[.6px]   duration-300 group-hover:ml-2 group-hover:fill-gold group-hover:stroke-gold;
+    @apply mr-1 inline-block w-4 rotate-180 stroke-[.6px] duration-300 group-hover:ml-2 group-hover:fill-gold group-hover:stroke-gold;
   }
 }
+
 /* --- Adding font family ----- */
 html {
   font-family: "Poppins", "sans-serif";
 }
+
 /* ------------ Hamburger Custom css ---------------- */
 .hamburger-menu {
   position: relative;
@@ -83,17 +93,25 @@ html {
 .swiper-button-next {
   display: none;
 }
+
 /* customizing swiper pagination for first carousel */
 :root {
-  --swiper-pagination-color: #ba933e; /* Active bullet color */
-  --swiper-pagination-bullet-size: 6px; /* Bullet size */
-  --swiper-pagination-bullet-inactive-color: #c5c4c8bb; /* Inactive bullet color */
-  --swiper-pagination-bullet-inactive-opacity: 0.6; /* Inactive bullet opacity */
-  --swiper-pagination-bullet-horizontal-gap: 4px; /* Horizontal gap between bullets */
+  --swiper-pagination-color: #ba933e;
+  /* Active bullet color */
+  --swiper-pagination-bullet-size: 6px;
+  /* Bullet size */
+  --swiper-pagination-bullet-inactive-color: #c5c4c8bb;
+  /* Inactive bullet color */
+  --swiper-pagination-bullet-inactive-opacity: 0.6;
+  /* Inactive bullet opacity */
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  /* Horizontal gap between bullets */
 }
+
 /*----------------------------  Outlined Text ------------------- */
 .stroked-text {
-  -webkit-text-stroke: 0.8px #e2e4e7; /* Stroke width and color for Webkit browsers (Chrome, Safari) */
+  -webkit-text-stroke: 0.8px #e2e4e7;
+  /* Stroke width and color for Webkit browsers (Chrome, Safari) */
 }
 
 /* ----------------------- bg Images ---------------------- */
@@ -103,24 +121,28 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .homePageEEEBgImage {
   background: url("./images/homePageEEEBgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .homePagePartnersBgImage {
   background: url("./images/homePagePartnersBgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .aboutPageWeBelieveBgImage {
   background: url("./images/aboutPageWeBelieveBgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .aboutPageKriationzBgImage {
   background: url("./images/aboutPageKriationzBgImage.jpg");
   background-position: center;
@@ -134,39 +156,46 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
-.zigsawSolvingPeopleBgImage{
+
+.zigsawSolvingPeopleBgImage {
   background: url("./images/zigsawSolvingPeople.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.manOnMountainsBgImage{
+
+.manOnMountainsBgImage {
   background: url("./images/manOnMountains.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.uxBgImage{
+
+.uxBgImage {
   background: url("./images/uxbgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.uxBgImage2{
+
+.uxBgImage2 {
   background: url("./images/uxbgImage2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.bangaluruBgImage{
+
+.bangaluruBgImage {
   background: url("./images/bangaluruBgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
+
 ::-webkit-time-picker-indicator {
   filter: invert(1);
 }

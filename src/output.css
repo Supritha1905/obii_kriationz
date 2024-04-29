@@ -791,6 +791,14 @@ video {
   top: 124px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-full{
+  left: 100%;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -928,6 +936,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;
@@ -941,6 +953,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
 }
 
 .grid{
@@ -1283,6 +1299,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .rounded-l-md{
   border-top-left-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
@@ -1435,6 +1455,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .fill-\[\#1b1b1b\]{
   fill: #1b1b1b;
 }
@@ -1573,6 +1598,11 @@ video {
 .py-\[9px\]{
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-1{
@@ -1837,6 +1867,23 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#1b1b1\]{
+  color: #1b1b1;
+}
+
+.text-\[\#1b1\]{
+  --tw-text-opacity: 1;
+  color: rgb(17 187 17 / var(--tw-text-opacity));
+}
+
+.text-\[\#\]{
+  color: #;
+}
+
+.underline{
+  text-decoration-line: underline;
+}
+
 .opacity-20{
   opacity: 0.2;
 }
@@ -2008,35 +2055,35 @@ html {
   background-attachment: fixed;
 }
 
-.zigsawSolvingPeopleBgImage{
+.zigsawSolvingPeopleBgImage {
   background: url("./images/zigsawSolvingPeople.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.manOnMountainsBgImage{
+.manOnMountainsBgImage {
   background: url("./images/manOnMountains.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.uxBgImage{
+.uxBgImage {
   background: url("./images/uxbgImage.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.uxBgImage2{
+.uxBgImage2 {
   background: url("./images/uxbgImage2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.bangaluruBgImage{
+.bangaluruBgImage {
   background: url("./images/bangaluruBgImage.jpg");
   background-position: center;
   background-size: cover;
@@ -2120,6 +2167,11 @@ html {
 
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+
+.hover\:bg-dark:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 24 40 / var(--tw-bg-opacity));
 }
 
 .hover\:fill-gold:hover{
@@ -2226,6 +2278,10 @@ html {
 
 .group:hover .group-hover\:fill-white{
   fill: #ffffff;
+}
+
+.group:hover .group-hover\:fill-dark{
+  fill: #151828;
 }
 
 .group:hover .group-hover\:opacity-40{
@@ -2905,6 +2961,10 @@ html {
 
   .lg\:leading-\[47px\]{
     line-height: 47px;
+  }
+
+  .lg\:leading-\[49px\]{
+    line-height: 49px;
   }
 
   .lg\:leading-\[50px\]{
